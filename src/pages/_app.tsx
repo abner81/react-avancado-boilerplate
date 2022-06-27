@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="manifest" href="/manifest.json" />
         <meta
           name="description"
-          content="A simples project start to work with Typescript, React, NextJS and Styled Components"
+          content="A simples project start to work with Typescript, React, NextJS and Styled Components."
         />
       </Head>
       <GlobalStyles />

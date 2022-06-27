@@ -9,13 +9,14 @@
     "lint": "npx eslint src --max-warnings=0",
     "test": "jest",
     "test:watch": "yarn test --watch",
+    "test:staged": "yarn test --findRelatedTests --passWithNoTests --bail",
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook -s ./public"
   },
   "lint-staged": {
     "src/**/*": [
       "yarn lint --fix",
-      "yarn test --findRelatedTests --bail"
+      "yarn test:staged"
     ]
   },
   "dependencies": {
